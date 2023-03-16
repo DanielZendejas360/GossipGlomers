@@ -1,6 +1,7 @@
 package org.daniel;
 
 import org.daniel.chapter1.Echo;
+import org.daniel.chapter2.UniqueIdGenerator;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,6 +16,10 @@ public class Main {
             case 1:
                 Echo echo = new Echo();
                 echo.run();
+                break;
+            case 2:
+                UniqueIdGenerator uniqueIDGenerator = new UniqueIdGenerator();
+                uniqueIDGenerator.run();
                 break;
         }
     }
